@@ -6,9 +6,68 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Lezione CSS</title>
+    <style>
+        html{
+            font-size: 16pt;
+        }
+
+        section.sidebar{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 200px;
+            
+        }
+
+        div{
+            background-color: rgb(195, 206, 194);
+            margin: 3px;
+        }
+
+        div>a{
+            flex: 1;
+            color:  #2b2b2b;
+        }
+
+        div>a:hover{
+            color:  #2b2bb2;
+            transition: 0.3s;
+        }
+
+        div.user-info{
+            text-align: center;
+        }
+
+
+    </style>
 </head>
 
 <body>
+    <section class="sidebar">
+        <div>
+            <img src="assets/logo.png" alt="immagine logo" width="100%">
+        </div>
+        <div>
+            <a href="#">Prodotti</a>
+        </div>
+        <div>
+            <a href="#">Chi siamo</a>
+        </div>
+        <div>
+            <a href="#">Contatti</a>
+        </div>
+        <div>
+            <a href="#">Lavora con noi</a>
+        </div>
+        <div class="user-info">
+            <img src="assets/user.png" alt="immagine utente" width="50%">
+            <p>Ludovico Colucci</p>
+        </div>
+
+
+
+
+    </section>
     
 </body>
 
